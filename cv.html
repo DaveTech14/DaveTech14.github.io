@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CV DAVID EMANUEL SALINAS DURAN </title>
+    <link rel="shortcut icon" href="multimedia/rocket_23861.ico" />
+    <link rel="stylesheet" href="cvcs.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div id="google_translate_element"></div>
+
+    <!-- Botón para descargar PDF Y PNG -->
+ 
+<button id="savePdf" class="button"> Descargar CV a PDF </button>
+<button id="saveImage" class="button"> Descargar CV a PNG </button>
+
+
+
+    <div class="cv-container" id="cv">
+        <!-- Barra lateral izquierda -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="media/IMG_20190714_114531924.jpg" alt="Foto de perfil" class="profile-img">
+                <h1 class="name"> David Salinas </h1>
+                <p> Ingenieria en Sistemas Computacionales </p>
+            </div>
+
+            <section class="contact">
+                <h2> Contacto </h2>
+                <ul>
+                    <li> 📧 david.salinas.cbte@gmail.com </li>
+                    <li>  📞 +52 5573111271 </li>
+                    <li> 🌐 http://github </li>
+                    <li> 📌 Estado de Mexico, Huehuetoca </li>
+                </ul> 
+            </section>
+
+            <section class="skills">
+                <h2> Soft Skills </h2>
+                <ul>
+                    <li> Comunicación efectiva y asertiva </li>
+                    <li> Trabajo en equipo y colaboración </li>
+                    <li> Adaptabilidad y disposición para aprender </li>
+                    <li> Resolución de problemas y pensamiento crítico </li>
+                    <li> Organización y gestión del tiempo </li>
+                    <li> Orientación al servicio y atención al cliente </li>
+                </ul>
+            </section>
+
+            <section class="software">
+                <h2> Habilidades Técnicas </h2>
+                <div class="skill-bar">
+                    <p> Desarrollo Web (HTML, CSS, Javascript)</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p> Bases de datos Relacionales (Diseño y mantenimiento) </p>
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>Manejo intermedio de Microsoft Office, office copilot 365 (Word, Excel, Outlook, Powerpoint)</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>Conocimientos Básicos de programación (Java, Python, Php)</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p> Capacidad para investigar y aprender nuevas tecnologías e implementar</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+
+            <section class="profile">
+                <h2> Profile </h2>
+                <div class="profile-item">
+                    <h3>"Recién egresado de la carrera de Ingeniería en sistemas Computacionales con disposición para desarrollarme desde cero aprendiendo nuevas tecnologias e implementarlas.Cuento con experiencia comprobable y habilidades técnicas en desarrollo web, bases de datos relacionales y manejo intermedio de Microsoft Office,roles administrativos, captura de datos, atención al cliente y ventas.
+                    Todo ello me ha permitido desarrollar habilidades sólidas para la Comunicación efectiva, trabajo en equipo y resolución de problemas"
+                    </h3>
+                </div>
+
+            </section>
+
+            <section class="education">
+                <h2>Educación</h2>
+                <div class="education-item">
+                    <h3> Ingeniería en Sistemas Computacionales </h3>
+                    <p> Universidad Utel | 2020 - 2023 </p>
+                </div>
+                <div class="education-item">
+                    <h3> Técnico en Informática </h3>
+                    <p>Bachillerato Tecnológico CBT Jaime Keller Torres |2013 - 2016 </p>
+                </div>
+            </section>
+
+            <section class="experience">
+                <h2> Experiencia laboral </h2>
+                <div class="experience-item">
+                    <h3> Vendedor de piso </h3>
+                    <p> Tienda Coppel | Junio 2023 - Febrero 2024 </p>
+                    <ul>
+                        <li> Cajero y vendedor de telefonía </li>
+                        <li> Inventarios, acomodo de mercancía </li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3> Auxiliar Administrativo </h3>
+                    <p> Walmart de México y Centroamérica | Septiembre 2022 - Noviembre 2022 </p>
+                    <ul>
+                        <li>Actividades administrativas (Programar envíos de mercancía, surtir mercancía)</li>
+                        <li>Actividades operativas (acomodo de tarimas, inventario cíclico de mercancía)</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3> Auxiliar administrativo  </h3>
+                    <p> Wilson Sporting Goods CO de México | Septiembre 2022 - Noviembre 2022 </p>
+                    <ul>
+                        <li>Actividades administrativas (Programar envíos de mercancía, surtir mercancía)</li>
+                        <li>Actividades operativas (acomodo de tarimas, inventario cíclico de mercancía)</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script para descargar PDF -->
+    <!--<script src="script.js"></script>-->
+    <script>
+        document.getElementById('savePdf').addEventListener('click', function() {
+            html2canvas(document.getElementById('cv'), { scale: 2 }).then(canvas => {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+                const imgData = canvas.toDataURL("image/png");
+                doc.addImage(imgData, 'PNG', 10, 10, 190, 270);
+                doc.save("CV DAVID SALINAS.pdf");
+                
+                alert("Documento Descargado con éxito en formato PDF!!");
+            });
+        });
+    </script>
+
+<script>
+    document.getElementById('saveImage').addEventListener('click', function() {
+        html2canvas(document.getElementById('cv')).then(canvas => {
+            let link = document.createElement('a');
+            link.href = canvas.toDataURL("image/png");
+            link.download = "curriculum.png";
+            link.click();
+            alert("Documento Descargado con éxito en formato PNG!!")
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,ru,de,zh-CN,el', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+</html>
